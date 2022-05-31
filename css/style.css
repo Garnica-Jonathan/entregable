@@ -16,7 +16,8 @@ body ul {
 
 .navbar {
   font-family: 'Fjalla One', sans-serif;
-  font-size: 25px;}
+  font-size: 25px;
+  height: 100px;}
 .logo {
   width: 65px;
   height: 52px;
@@ -128,13 +129,15 @@ body ul {
 
 .info {
   display: flex;
-  height: 39px;
+  height: 21px;
   width: 193px;
   justify-content: center;
-  align-items: center;
   font-family: 'Noto Sans HK', sans-serif;
   font-size: 15px;
-  margin-left: 21px; }
+  margin-top: 10px;
+  margin-left: 21px;
+  overflow: hidden;
+  margin-bottom: 10px;}
 
 .sub_barra {
   margin: 9px;
@@ -142,6 +145,104 @@ body ul {
   font-size: 21px;
   margin-bottom: 0px;
   padding-top: 25px; }
+
+  /* html del Popular */
+
+
+
+  .sub_ranking-tab{
+    background: white;
+    position: sticky;
+    top: 0px;
+    z-index: 100; }
+   .sub_ranking-tab ul {
+      border-top: 1px solid #eaeaea;
+      border-bottom: 1px solid #eaeaea;
+      align-items: center; }
+    .sub_ranking-tab li {
+      list-style-type: none;
+      margin: 10px;
+      padding: 10px;
+      font-size: 15px;
+      margin-left: 40px;
+      margin-right: 40px;}
+  .title_area{
+    margin: 0 auto;
+    width: 1085px;
+    margin-top: 66px;
+    padding-left: 18px;}
+    .title_area p{
+      font-size: 20px;
+      font-weight: 700;
+    }
+  .ranking_table{
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    padding-left: 0rem;}
+    
+  .ranking_table li {
+    list-style-type: none;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    font-size: 17px; }
+  .list_type{
+    margin: 0 auto;
+    width: 1048px;
+    margin-bottom: 123px;
+  }
+  .ranking-top{
+    position: relative;
+  }
+  .ranking-top img{
+    height: 388px;
+    width: 415px;
+    
+  }
+  .ranking-top span{
+    position: absolute;
+    left: 35px;
+    top: -12px;
+    font-size: 96px;
+    color: white;
+    font-weight: 1000;
+  }
+  .sb_genero{
+    margin-top: 15px;
+    margin-bottom: 9px;
+    color:#bbb;;
+    font-size: 12px;
+  }
+  .sb_title{
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .sub_ranking{
+    display: inline-flex;
+    border-bottom: 1px #bbb solid;
+    margin-bottom: 6px;
+  }
+  .sub_ranking img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+
+  }
+  .sub_ranking span{
+    font-weight: 700;
+    font-size: 25px;
+    align-items: center;
+    width: 53px;
+    justify-content: center;
+    
+  }
+  .info_area{
+    font-size: 16px;
+    width: 417px;
+    font-weight: 550;
+  }
 
 @media only screen and (max-width: 1148px) {
   .card {
@@ -173,6 +274,8 @@ body ul {
     height: 852px; } }
 
 @media only screen and (max-width: 767px) {
+  .slide img {
+    height: 300px; }
   .sub_card div:hover {
     transform: scale(1.1, 1.1); }
   .card {
@@ -191,6 +294,9 @@ body ul {
       font-size: 13px; } }
 
 @media only screen and (max-width: 400px) {
+  .slide img {
+    height: 170px; }
+  
   /* html para el genero */
   .barra li {
     width: 330px;
@@ -204,3 +310,5 @@ body ul {
     margin: 8px;
     padding: 0px;
     text-align: center; } }
+
+    
