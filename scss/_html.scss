@@ -1,0 +1,285 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	ul {
+		list-style: none;
+		li {
+			a {
+				text-decoration: none;
+				color: black;
+				&:hover {
+					color: black !important;
+				}
+			}
+		}
+	}
+}
+
+/*html del index*/
+
+
+.navbar {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 25px;
+}
+.logo {
+	width: 65px;
+	height: 52px;
+	margin: 24px;
+	padding: 1px;
+}
+.slide {
+	img {
+		height: 500px;
+	}
+}
+.barra {
+	ul {
+		height: 69px;
+		border-top: 3px solid #eaeaea;
+		border-bottom: 3px solid #eaeaea;
+		font-family: 'Cairo', sans-serif;
+	}
+	li {
+		list-style-type: none;
+		margin: 10px;
+		padding: 10px;
+		font-size: 25px;
+	}
+}
+.card {
+	background-color: whitesmoke !important;
+	height: 608px;
+	margin: 0 auto;
+	img {
+		height: 202px;
+		width: 201px;
+		margin: 16px;
+	}
+}
+.sub_card {
+	div {
+		&:hover {
+			transform: scale(1.1, 1.1);
+		}
+	}
+	p {
+		height: 20px;
+		width: 201px;
+		text-align: center;
+		margin-left: 15px;
+		font-family: 'Noto Sans HK', sans-serif;
+	}
+}
+.footer {
+	display: grid;
+	grid-template-rows: 50px 45px 50px;
+	grid-template-areas: "contacto" "follow" "copyright";
+	background-color: #e5e5e5;
+}
+.foo_contacto {
+	grid-area: contacto;
+	color: black;
+	p {
+		cursor: pointer;
+		margin: 10px;
+		&:hover {
+			color: #a8a8a8;
+		}
+	}
+	div {
+		font-size: 25px;
+		margin: 10px 10px;
+	}
+}
+.foo_follow {
+	grid-area: follow;
+	img {
+		height: 16px;
+		width: 16px;
+		margin-left: 23px;
+		cursor: pointer;
+	}
+}
+.foo_copyright {
+	grid-area: copyright;
+	color: black;
+	p {
+		cursor: pointer;
+		&:hover {
+			color: #a8a8a8;
+		}
+	}
+}
+
+
+/* html del genero */
+
+.barra_genero {
+	background: white;
+	position: sticky;
+	top: 0px;
+	z-index: 100;
+}
+@mixin barra {
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+	align-items: center;
+}
+.barra_genero {
+	@include barra;
+	ul {
+		@include barra;
+		margin-bottom: 0px;
+	}
+	li {
+		list-style-type: none;
+		margin: 10px;
+		padding: 10px;
+		font-size: 23px;
+	}
+}
+.list_title {
+	grid-area: list_title;
+	padding: 16px;
+	background-color: whitesmoke;
+	width: 1213px;
+	margin: 0 auto;
+}
+.sub_title {
+	div {
+		&:hover {
+			transform: scale(1.1, 1.1);
+		}
+	}
+	img {
+		height: 207px;
+		width: 187px;
+		margin-left: 21px;
+		margin-top: 9px;
+	}
+}
+.info {
+	display: flex;
+	height: 39px;
+	width: 193px;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Noto Sans HK', sans-serif;
+	font-size: 15px;
+	margin-left: 21px;
+}
+.sub_barra {
+	margin: 9px;
+	padding: 10px;
+	font-size: 21px;
+	margin-bottom: 0px;
+	padding-top: 25px;
+}
+
+/*html de los populares*/
+
+
+$font-size:(
+	super-chico: 12px,
+	chico: 17px,
+	mediano: 20px,
+);
+.sub_ranking-tab {
+	background: white;
+	position: sticky;
+	top: 0px;
+	z-index: 100;
+	ul {
+		@include barra;
+	}
+	li {
+		list-style-type: none;
+		margin: 10px;
+		padding: 10px;
+		font-size: map-get($font-size, super-chico );
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+.title_area {
+	margin: 0 auto;
+	width: 1085px;
+	margin-top: 66px;
+	padding-left: 18px;
+	p {
+		font-size: map-get($font-size, mediano );
+		font-weight: 700;
+	}
+}
+.ranking_table {
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+	align-items: center;
+	justify-content: space-between;
+	height: 45px;
+	padding-left: 0rem;
+	li {
+		list-style-type: none;
+		margin-left: 10px;
+		font-size: map-get($font-size, chico );
+	}
+}
+.list_type {
+	margin: 0 auto;
+	width: 1048px;
+	margin-bottom: 123px;
+	margin-top: 100px;
+}
+.ranking-top {
+	position: relative;
+	text-decoration: none;
+	padding-left: 34px !important;
+	img {
+		height: 388px;
+		width: 100%;
+	}
+	span {
+		position: absolute;
+		left: 53px;
+		top: -12px;
+		font-size: 96px;
+		color: white;
+		font-weight: 1000;
+	}
+}
+.sb_genero {
+	margin-top: 15px;
+	margin-bottom: 9px;
+	color: #bbb;
+	font-size: 12px;
+}
+.sb_title {
+	font-size: 25px;
+	font-weight: 700;
+}
+.sub_ranking {
+	display: inline-flex;
+	border-bottom: 1px #bbb solid;
+	margin-bottom: 6px;
+	img {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 5px;
+	}
+	span {
+		font-weight: 700;
+		font-size: 25px;
+		align-items: center;
+		width: 53px;
+		justify-content: center;
+	}
+}
+.info_area {
+	font-size: 16px;
+	width: 417px;
+	font-weight: 550;
+}
