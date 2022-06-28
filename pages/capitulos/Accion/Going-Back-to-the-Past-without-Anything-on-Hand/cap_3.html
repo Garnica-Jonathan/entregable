@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/style.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <nav class=" navbar  navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img src="../../../../imagenes/logo/libro.png" alt="logo" class="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+				<li class="nav-item ">
+					<a class="nav-link " aria-current="page" href="../../../../index.html">Home</a>
+				  </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../../../popular/populares.html">Popular</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Genero
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../../../genero.html#accion">Accion</a></li>
+                  <li><a class="dropdown-item" href="../../../genero.html#aventura">Aventura</a></li>
+                  <li><a class="dropdown-item" href="../../../genero.html#comedia">Comedia</a></li>
+                  <li><a class="dropdown-item" href="../../../genero.html#romance">Romance</a></li>
+                  <li><a class="dropdown-item" href="../../../genero.html#terror">Terror</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Foro</a>
+              </li>    
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+				<li class="nav-item ">
+                    <a class="nav-link" href="#">Publicar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio de sesion</a>
+                </li>
+            </ul >
+            <form class="d-flex">
+              <button class="btn " type="submit">
+                  <img src="../../../../imagenes/logo/busqueda.png" alt="">
+              </button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <div class="conteiner">
+      <div class="fondo_cap">
+        <img src="data:image/jpeg;base64,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" alt="">
+      </div>
+      <div class="conteiner_box">
+        <div class="cont_cap row d-flex justify-content-between align-items-center">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 py-4">
+            <img class="img_cap" src="https://otakuteca.com/images/books/cover/62409bb4dc5af.jpg" alt="">
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 py-4">
+            <p class="title_genr d-flex justify-content-center">Accion, Fantasia</p>
+            <p class="title d-flex justify-content-center">Going Back to the Past without Anything on Hand</p>
+         </div>
+        </div>
+        <div class="detail_list">
+          <div class="row">
+            <div class="icono_view col-12 py-4 px-4">
+              <ul class="d-flex justify-content-around px-0">
+                <li class="ico_no d-flex align-items-center justify-content-center"><img src="../../../../imagenes/logo/view.png" alt="">20000</li>
+                <li class="ico_no d-flex align-items-center justify-content-center"><img src="../../../../imagenes/logo/susbribe.png" alt="">20000</li>
+                <li class="ico_no d-flex align-items-center justify-content-center"><img src="../../../../imagenes/logo/star.png" alt="">8,8</li>
+              </ul>
+              <p>An ordinary middle schooler, Lee Sungmin, is summoned to this world called ‘Eria’. He endures for dozens of years with no talents or powers, and makes it through all kinds of hardships to survive, but dies miserably in the end. However, before he dies, he regresses back to the past after obtaining the ‘Stone of the Past Life’ by chance, and gains the opportunity to start his life anew. Yet, he still lives a life without any talents, having nothing. Although he can’t approach the geniuses around him due to the ‘wall’ surrounding them, as well as feeling inferior, he moves forward step by step with firm determination, never giving up. “No matter what, I’m going to live a better life than my previous one even if I have to struggle!”</p>
+            </div>
+          </div>
+            <div class="row px-3">
+                <div class=" detail_ul col-12">
+                    <ul>
+                      <li class="episode_list px-3">
+                        <a href="#" class="episode d-flex align-items-center">
+                          <span>Capitulo 21</span>
+                          <div class="view d-flex align-items-center">
+                            <img src="../../../../imagenes/logo/view.png" alt="">
+                            <span>20,000</span>
+                          </div>
+                          <div class="_nume">
+                            <span>#21</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="episode_list px-3"> 
+                        <a href="#" class="episode d-flex align-items-center">
+                          <span>Capitulo 22</span>
+                          <div class="view d-flex align-items-center">
+                            <img src="../../../../imagenes/logo/view.png" alt="">
+                            <span>20,000</span>
+                          </div>
+                          <div class="_nume">
+                            <span>#22</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="episode_list px-3">
+                        <a href="#" class="episode d-flex align-items-center">
+                          <span>Capitulo 23</span>
+                          <div class="view d-flex align-items-center">
+                            <img src="../../../../imagenes/logo/view.png" alt="">
+                            <span>20,000</span>
+                          </div>
+                          <div class="_nume">
+                            <span>#23</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="episode_list px-3">
+                        <a href="#" class="episode d-flex align-items-center">
+                          <span>Capitulo 24</span>
+                          <div class="view d-flex align-items-center">
+                            <img src="../../../../imagenes/logo/view.png" alt="">
+                            <span>20,000</span>
+                          </div>
+                          <div class="_nume">
+                            <span>#24</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="episode_list px-3">
+                        <a href="#" class="episode d-flex align-items-center">
+                          <span>Capitulo 25</span>
+                          <div class="view d-flex align-items-center">
+                            <img src="../../../../imagenes/logo/view.png" alt="">
+                            <span>20,000</span>
+                          </div>
+                          <div class="_nume">
+                            <span>#25</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="episode_list px-3">
+                        <a href="#" class="episode d-flex align-items-center">
+                          <span>Capitulo 26</span>
+                          <div class="view d-flex align-items-center">
+                            <img src="../../../../imagenes/logo/view.png" alt="">
+                            <span>20,000</span>
+                          </div>
+                          <div class="_nume">
+                            <span>#26</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="episode_list px-3">
+                        <a href="#" class="episode d-flex align-items-center">
+                          <span>Capitulo 27</span>
+                          <div class="view d-flex align-items-center">
+                            <img src="../../../../imagenes/logo/view.png" alt="">
+                            <span>20,000</span>
+                          </div>
+                          <div class="_nume">
+                            <span>#27</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="episode_list px-3">
+                        <a href="#" class="episode d-flex align-items-center">
+                          <span>Capitulo 28</span>
+                          <div class="view d-flex align-items-center">
+                            <img src="../../../../imagenes/logo/view.png" alt="">
+                            <span>20,000</span>
+                          </div>
+                          <div class="_nume">
+                            <span>#28</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="episode_list px-3">
+                        <a href="#" class="episode d-flex align-items-center">
+                          <span>Capitulo 29</span>
+                          <div class="view d-flex align-items-center">
+                            <img src="../../../../imagenes/logo/view.png" alt="">
+                            <span>20,000</span>
+                          </div>
+                          <div class="_nume">
+                            <span>#29</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="episode_list px-3">
+                        <a href="#" class="episode d-flex align-items-center">
+                          <span>Capitulo 30</span>
+                          <div class="view d-flex align-items-center">
+                            <img src="../../../../imagenes/logo/view.png" alt="">
+                            <span>20,000</span>
+                          </div>
+                          <div class="_nume">
+                            <span>#30</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                          <a class="page-link" href="cap_1.html" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="cap_1.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="cap_2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="cap_3.html">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="cap_2.html" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer container-fluid px-0">
+        <div class="foo_contacto d-flex justify-content-center align-items-center">
+            <p>Acerca de..</p>
+            <div>|</div>
+            <P>Opiniones</P>
+            <div>|</div>
+            <p>Contacto</p>
+            <div>|</div>
+            <p>Terminos</p>
+            <div>|</div>
+        </div>
+        <div class="foo_follow d-flex justify-content-center align-items-center">
+            <img src="../../../../imagenes/logo/logotipo-de-instagram.png" alt="logo_instagram">
+            <img src="../../../../imagenes/logo/twitter.png" alt="logo_twitter">
+            <img src="../../../../imagenes/logo/facebook.png" alt="logo_facebook">
+            <img src="../../../../imagenes/logo/youtube.png" alt="logo_youtube">
+        </div>
+        <div class="foo_copyright d-flex justify-content-center align-items-center">
+          <p>copyright</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

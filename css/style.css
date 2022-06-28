@@ -99,9 +99,7 @@ body ul {
   background: white;
   position: sticky;
   top: 0px;
-  z-index: 100; }
-
-.barra_genero {
+  z-index: 100;
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
   align-items: center; }
@@ -128,19 +126,25 @@ body ul {
 
 .sub_title img {
   height: 207px;
-  width: 187px;
+  width: 100%;
   margin-left: 21px;
   margin-top: 9px; }
 
+.link {
+  text-decoration: none;
+  color: black; }
+
 .info {
-  display: flex;
-  height: 39px;
-  width: 193px;
-  justify-content: center;
-  align-items: center;
+  height: 21px;
+  width: 182px;
   font-family: 'Noto Sans HK', sans-serif;
   font-size: 15px;
-  margin-left: 21px; }
+  margin-left: 21px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: black; }
 
 .sub_barra {
   margin: 9px;
@@ -190,7 +194,7 @@ body ul {
 
 .list_type {
   margin: 0 auto;
-  width: 1048px;
+  width: 64%;
   margin-bottom: 123px;
   margin-top: 100px; }
 
@@ -239,6 +243,100 @@ body ul {
   width: 417px;
   font-weight: 550; }
 
+/* html de capitulos */
+.conteiner {
+  height: 100%;
+  background: #f5f5f5; }
+
+.fondo_cap {
+  position: absolute;
+  width: 100%; }
+  .fondo_cap img {
+    height: 27rem;
+    width: 100%; }
+
+.conteiner_box {
+  margin: 0 auto;
+  width: 72%;
+  z-index: 50;
+  position: relative; }
+
+.cont_cap {
+  height: 349px; }
+
+.img_cap {
+  width: 100%;
+  height: 312px; }
+
+.title_genr {
+  font-size: 20px;
+  color: wheat;
+  margin-bottom: 0rem; }
+
+.title {
+  font-size: 51px;
+  color: white; }
+
+.log_wrap {
+  position: relative;
+  top: 177px; }
+
+.img_logo {
+  height: 20px;
+  background-color: white;
+  margin-left: 2px; }
+
+.detail_list {
+  margin-top: 22px;
+  background: white; }
+
+.icono_view ul li img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px; }
+
+.ico_no {
+  border: 3px gray solid;
+  border-radius: 17px;
+  background: #dfdecf78;
+  width: 84px; }
+
+.detail_ul {
+  border-right: 3px solid #f5f5f5; }
+  .detail_ul ul {
+    padding-left: 0rem; }
+
+.episode_list {
+  border-bottom: 3px #f5f5f5 solid;
+  height: 62px;
+  justify-items: center; }
+  .episode_list:first-child {
+    border-top: 3px #f5f5f5 solid; }
+  .episode_list:hover {
+    background-color: #f5f5f5; }
+  .episode_list img {
+    height: 26px;
+    margin-right: 6px; }
+
+.episode {
+  width: 100%;
+  height: 62px; }
+  .episode span {
+    width: 100%;
+    font-size: 16px; }
+
+.view {
+  width: 100px; }
+
+._nume {
+  width: 47px;
+  text-align: right; }
+
+@media only screen and (max-width: 1200px) {
+  /*html de los capitulos*/
+  .title {
+    font-size: 42px; } }
+
 @media only screen and (max-width: 1148px) {
   /*html del index*/
   .card {
@@ -250,6 +348,15 @@ body ul {
   /*html de los populares*/
   .info_area {
     width: 317px; } }
+
+@media only screen and (max-width: 992px) {
+  /* html de los populares */
+  .list_type {
+    width: 72%; }
+  .title {
+    font-size: 32px; }
+  .title_genr {
+    font-size: 18px; } }
 
 @media only screen and (max-width: 886px) {
   /*html de los populares*/
@@ -275,15 +382,27 @@ body ul {
   .card {
     height: 852px; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 886px) {
   /*html de los populares*/
   .info_area {
-    width: 230px; }
+    width: 236px; } }
+
+@media only screen and (max-width: 768px) {
+  /*html de los capitulos*/
+  .title {
+    font-size: 24px; }
+  .title_genr {
+    font-size: 16px; }
+  /*html de los populares*/
+  .info_area {
+    width: 203px; }
   /*html del index*/
   .sub_card div:hover {
     transform: scale(1.1, 1.1); }
   .card {
-    height: 1119px; } }
+    height: 1119px; }
+  .list_type {
+    width: 96%; } }
 
 @media only screen and (max-width: 684px) {
   /*html de los populares*/
@@ -293,6 +412,23 @@ body ul {
     width: 135px; } }
 
 @media only screen and (max-width: 574px) {
+  /*html de los capitulos*/
+  .conteiner_box {
+    width: 83%; }
+  .fondo_cap img {
+    height: 43rem; }
+  .title {
+    font-size: 31px; }
+  .title_genr {
+    font-size: 20px; }
+  .log_wrap {
+    top: 12px; }
+  .episode span {
+    font-size: 14px; }
+  .episode_list img {
+    height: 18px; }
+  .detail_list {
+    margin-top: 270px; }
   /*html de los populares*/
   .ranking-top img {
     margin-left: 15px; }
@@ -300,6 +436,8 @@ body ul {
     margin-left: -41px; }
   .info_area {
     width: 296px; }
+  .list_type {
+    width: 95%; }
   /*html del index*/
   .barra li {
     font-size: 17px; }
@@ -309,10 +447,26 @@ body ul {
     height: 2203px; }
   .foo_contacto {
     margin: 4px; }
-    .foo_contacto p {
-      font-size: 13px; } }
+  .foo_contacto p {
+    font-size: 13px; } }
+
+@media only screen and (max-width: 462px) {
+  /* html de los populares */
+  .list_type {
+    width: 93%; }
+  .info_area {
+    width: 239px; } }
 
 @media only screen and (max-width: 400px) {
+  /*html de los capitulos*/
+  .conteiner_box {
+    width: 94%; }
+  /* html de los pupulares */
+  .list_type {
+    width: 92%; }
+  .info_area {
+    width: 158px;
+    font-size: 14px; }
   /*html del index*/
   .slide img {
     height: 170px; }
